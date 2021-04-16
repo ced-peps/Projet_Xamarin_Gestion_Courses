@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet_Xamarin_Gestion_Courses.Views.ListCourse">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <Button Text="Add Coureur" Grid.Row="0" WidthRequest="100" Command="{Binding ActionNavigation}"/>
+            
+            <ListView x:Name="ListeCourse" HasUnevenRows="True" ItemsSource="{Binding Courses}" Grid.Row="1">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Label Text="{Binding Nom}" FontSize="24" TextColor="Red" Grid.Row="0"/>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Text="{Binding Lieu}" FontSize="13" TextColor="Blue" Grid.Column="0"/>
+                                    <Label Text="{Binding Distance}" FontSize="13" TextColor="Blue" Grid.Column="1"/>
+                                </Grid>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+   
+</ContentPage>

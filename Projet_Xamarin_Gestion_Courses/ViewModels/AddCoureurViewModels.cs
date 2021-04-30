@@ -26,11 +26,11 @@ namespace Projet_Xamarin_Gestion_Courses.ViewModels
         {
             Navigation.PopModalAsync();
 
-            //Coureur.Prenom = null;
-            //if(!string.IsNullOrEmpty(Coureur.Prenom))
-            //{
+           
+            if(!string.IsNullOrEmpty(Coureur.Prenom))
+            {
                 
-            //}
+            }
         }
     }
 }

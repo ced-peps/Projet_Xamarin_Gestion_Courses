@@ -11,6 +11,9 @@ namespace Projet_Xamarin_Gestion_Courses
     public partial class App : Application
     {
         public static List<Course> ListCourse { get; set; }
+        public static List<Coureur> ListCoureurs { get; set; }
+
+
         public App()
         {
             InitializeComponent();
@@ -20,6 +23,9 @@ namespace Projet_Xamarin_Gestion_Courses
             Initialisationlistecourse();
 
             MainPage = new ListCourse();
+
+            //if (ListCoureurs == null)
+
         }
 
         private void Initialisationlistecourse()

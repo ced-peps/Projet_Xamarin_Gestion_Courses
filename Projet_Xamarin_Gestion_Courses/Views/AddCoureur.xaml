@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projet_Xamarin_Gestion_Courses.Views.AddCoureur">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="GhostWhite">
             <Entry Text="{Binding Coureur.Prenom}" Placeholder="Prénom"/>
             <Entry Text="{Binding Coureur.Nom}" Placeholder="Nom"/>
             <Entry Text="{Binding Coureur.Age}" Placeholder="Age"/>
             <Entry Text="{Binding Coureur.Sexe}" Placeholder="Sexe"/>
-            <Button Text="Valider" Command="{Binding ValiderMonCoureur}"/>
+            <Button Margin="50, 10" Text="Valider" BackgroundColor="DarkGray" TextColor="White" FontAttributes="Bold" Command="{Binding ValiderMonCoureur}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

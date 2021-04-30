@@ -4,13 +4,13 @@
              x:Class="Projet_Xamarin_Gestion_Courses.Views.ListCourse">
 
     <ContentPage.Content>
-        <Grid>
+        <Grid BackgroundColor="GhostWhite">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
-            <Button Text="Ajouter un coureur" BackgroundColor="DarkGray" TextColor="white" Grid.Row="0" WidthRequest="100" Command="{Binding ActionNavigation}"/>
+
+            <Button Text="Ajouter un coureur" BackgroundColor="DarkGray" FontAttributes="Bold" TextColor="white" Grid.Row="0" WidthRequest="100" Command="{Binding ActionNavigation}"/>
             
             <ListView x:Name="ListeCourse" HasUnevenRows="True" ItemsSource="{Binding Courses}" Grid.Row="1">
                 <ListView.ItemTemplate>

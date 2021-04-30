@@ -24,9 +24,9 @@ namespace Projet_Xamarin_Gestion_Courses
 
         private void Initialisationlistecourse()
         {
-           ListCourse.Add(new Course { Nom = "Marathon de Paris", Lieu = "Paris", Distance = 42.195f });
-           ListCourse.Add(new Course { Nom = "Marathon de Montpellier", Lieu = "Montpellier", Distance = 42.195f });
-           ListCourse.Add(new Course { Nom = "Semi-Marathon de Phalempin", Lieu = "Phalempin", Distance = 21.1f });
+           ListCourse.Add(new Course { Nom = "Marathon de New-York", Lieu = "New-York", Distance = 42.195f });
+           ListCourse.Add(new Course { Nom = "Marathon de Toulouse", Lieu = "Toulouse", Distance = 42.195f });
+           ListCourse.Add(new Course { Nom = "Semi-Marathon de Seine-St-Denis", Lieu = "Seine-St-Denis", Distance = 21.1f });
 
 
         }

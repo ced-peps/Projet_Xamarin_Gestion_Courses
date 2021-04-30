@@ -16,7 +16,7 @@ namespace Projet_Xamarin_Gestion_Courses.Views
         public ListCourse()
         {
             InitializeComponent();
-            BindingContext = new ListeCourseViewModel();
+            BindingContext = new ListeCourseViewModel(Navigation);
         }
     }
 }

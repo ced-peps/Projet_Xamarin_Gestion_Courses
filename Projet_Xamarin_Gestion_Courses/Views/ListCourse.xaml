@@ -10,7 +10,7 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             
-            <Button Text="Add Coureur" Grid.Row="0" WidthRequest="100" Command="{Binding ActionNavigation}"/>
+            <Button Text="Ajouter un coureur" BackgroundColor="DarkGray" TextColor="white" Grid.Row="0" WidthRequest="100" Command="{Binding ActionNavigation}"/>
             
             <ListView x:Name="ListeCourse" HasUnevenRows="True" ItemsSource="{Binding Courses}" Grid.Row="1">
                 <ListView.ItemTemplate>
@@ -22,7 +22,7 @@
                                     <RowDefinition Height="Auto"/>
                                 </Grid.RowDefinitions>
 
-                                <Label Text="{Binding Nom}" FontSize="24" TextColor="Red" Grid.Row="0"/>
+                                <Label Text="{Binding Nom}" FontSize="24" TextColor="darkBlue" Grid.Row="0"/>
 
                                 <Grid Grid.Row="1">
                                     <Grid.ColumnDefinitions>
@@ -31,8 +31,8 @@
                                     </Grid.ColumnDefinitions>
 
 
-                                    <Label Text="{Binding Lieu}" FontSize="13" TextColor="Blue" Grid.Column="0"/>
-                                    <Label Text="{Binding Distance}" FontSize="13" TextColor="Blue" Grid.Column="1"/>
+                                    <Label Text="{Binding Lieu}" FontSize="13" TextColor="YellowGreen" Grid.Column="0"/>
+                                    <Label Text="{Binding Distance}" FontSize="13" TextColor="Gray" Grid.Column="1"/>
                                 </Grid>
                             </Grid>
                         </ViewCell>

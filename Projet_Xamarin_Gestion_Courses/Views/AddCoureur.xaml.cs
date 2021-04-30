@@ -16,7 +16,7 @@ namespace Projet_Xamarin_Gestion_Courses.Views
         public AddCoureur()
         {
             InitializeComponent();
-            BindingContext = new AddCoureurViewModels();
+            BindingContext = new AddCoureurViewModels(Navigation);
         }
     }
 }

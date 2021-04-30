@@ -4,10 +4,10 @@
              x:Class="Projet_Xamarin_Gestion_Courses.Views.AddCoureur">
     <ContentPage.Content>
         <StackLayout>
-            <Entry Text="{Binding Coureur.Prenom}"/>
-            <Entry Text="{Binding Coureur.Nom}"/>
-            <Entry Text="{Binding Coureur.Age}"/>
-            <Entry Text="{Binding Coureur.Sexe}"/>
+            <Entry Text="{Binding Coureur.Prenom}" Placeholder="Prénom"/>
+            <Entry Text="{Binding Coureur.Nom}" Placeholder="Nom"/>
+            <Entry Text="{Binding Coureur.Age}" Placeholder="Age"/>
+            <Entry Text="{Binding Coureur.Sexe}" Placeholder="Sexe"/>
             <Button Text="Valider" Command="{Binding ValiderMonCoureur}"/>
         </StackLayout>
     </ContentPage.Content>

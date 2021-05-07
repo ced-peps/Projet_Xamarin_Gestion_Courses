@@ -22,9 +22,12 @@ namespace Projet_Xamarin_Gestion_Courses
                 ListCourse = new List<Course>();
             Initialisationlistecourse();
 
+            if (ListCoureurs == null)
+                ListCoureurs = new List<Coureur>();
+
             MainPage = new ListCourse();
 
-            //if (ListCoureurs == null)
+            
 
         }
 

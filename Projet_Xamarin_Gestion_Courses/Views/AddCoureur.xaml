@@ -9,6 +9,7 @@
             <Entry Text="{Binding Coureur.Age}" Placeholder="Age"/>
             <Entry Text="{Binding Coureur.Sexe}" Placeholder="Sexe"/>
             <Button Margin="50, 10" Text="Valider" BackgroundColor="DarkGray" TextColor="White" FontAttributes="Bold" Command="{Binding ValiderMonCoureur}"/>
+            <Button Margin="50, 10" Text="Retour" BackgroundColor="DarkGray" TextColor="White" FontAttributes="Bold" Command="{Binding Retour}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

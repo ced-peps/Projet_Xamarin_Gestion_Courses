@@ -16,6 +16,10 @@ namespace Projet_Xamarin_Gestion_Courses.ViewModels
         public List<Course> Courses { get => _courses; set { _courses = value; OnPropertyChanged(); } } //OnPropertyChanged gère automatiquement les maj 
 
         public Command ActionNavigation { get; set; }
+
+        public Command AjouterCourse { get; set; }
+
+        
         public INavigation Navigation { get; set; }
         public ListeCourseViewModel(INavigation navigation)
         {
@@ -23,6 +27,8 @@ namespace Projet_Xamarin_Gestion_Courses.ViewModels
             Courses = new List<Course>();
             Courses = App.ListCourse;
             ActionNavigation = new Command(ActionNavigationCommand);
+            AjouterCourse = new Command(AjouterCourseCommand);
+            
             Navigation = navigation;
         }
 
@@ -30,5 +36,12 @@ namespace Projet_Xamarin_Gestion_Courses.ViewModels
         {
             Navigation.PushModalAsync(new AddCoureur());
         }
+
+        private void AjouterCourseCommand()
+        {
+
+        }
+
+       
     }
 }

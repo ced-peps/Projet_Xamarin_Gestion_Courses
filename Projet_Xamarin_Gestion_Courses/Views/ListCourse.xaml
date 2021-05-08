@@ -39,6 +39,10 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+
+            <Button Text="Ajouter une course" BackgroundColor="DarkGray" FontAttributes="Bold" TextColor="white" Grid.Row="0" WidthRequest="100" Command="{Binding AjouterCourse}"/>
+
+
         </Grid>
     </ContentPage.Content>
    

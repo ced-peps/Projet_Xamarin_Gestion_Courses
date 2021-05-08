@@ -14,23 +14,33 @@ namespace Projet_Xamarin_Gestion_Courses.ViewModels
         public INavigation Navigation { get; set; }
         public Command ValiderMonCoureur { get; set; }
 
+        public Command Retour { get; set; }
+
+       
+
         public AddCoureurViewModels(INavigation navigation)
         {
             if (Coureur == null)
                 Coureur = new Coureur();
             ValiderMonCoureur = new Command(ValiderMonCoureurCommand);
-
+            Navigation = navigation;
+            Retour = new Command(RetourCommand);
         }
 
         private void ValiderMonCoureurCommand()
         {
-            Navigation.PopModalAsync();
-
-           
-            if(!string.IsNullOrEmpty(Coureur.Prenom))
+            if (!string.IsNullOrEmpty(Coureur.Prenom) && !string.IsNullOrEmpty(Coureur.Nom) && !string.IsNullOrEmpty(Coureur.Age) && !string.IsNullOrEmpty(Coureur.Sexe))
             {
-                
+                App.ListCoureurs.Add(Coureur);
+                Navigation.PopModalAsync();
             }
+           
+        }
+
+        private void RetourCommand()
+        {
+            
+            Navigation.PopModalAsync();
         }
     }
 }
